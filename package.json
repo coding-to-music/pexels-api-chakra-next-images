@@ -1,10 +1,15 @@
 {
-  "name": "next-image-gallery",
+  "name": "pexels-api-chakra-next-images",
   "version": "0.1.0",
+  "cacheDirectories": [
+    "node_modules",
+    ".next/cache"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "git add . && git commit -m Build && git push && vercel --prod"
   },
   "author": "Ashutosh K Singh",
   "license": "MIT",
@@ -22,7 +27,9 @@
     "type": "git",
     "url": "git+https://github.com/lelouchB/next-image-gallery.git"
   },
-  "keywords": ["next image gallery"],
+  "keywords": [
+    "next image gallery"
+  ],
   "bugs": {
     "url": "https://github.com/lelouchB/next-image-gallery/issues"
   },
